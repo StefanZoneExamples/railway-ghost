@@ -14,6 +14,7 @@ Railway's filesystem is ephemeral which is why any changes to the filesystem are
 
 ### Environment Variables
 
+- `CUSTOM_DOMAIN`: Domain, which replaces the domain with the `*.up.railway.app` suffix. (**optional**)
 - `CLOUDINARY_URL`: For file storage. If you do not add this, your images won't persist between deploys. (**recommended**)
 - `MYSQLHOST`: Host of the MySQL database. (**required**)
 - `MYSQLPORT`: Port of the MySQL database. (**required**)
