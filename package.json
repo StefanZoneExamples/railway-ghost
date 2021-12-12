@@ -1,6 +1,6 @@
 {
   "name": "ghost",
-  "version": "1.0.0",
+  "version": "4.21.0",
   "description": "The Ghost configuration for a blog hosted on Railway with an external MySQL database.",
   "main": "index.js",
   "author": "stefankuehnel",
