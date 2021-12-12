@@ -20,6 +20,7 @@ Railway's filesystem is ephemeral which is why any changes to the filesystem are
 - `MYSQLUSER`: User of the MySQL database. (**required**)
 - `MYSQLPASSWORD`: Password of the MySQL database. (**required**)
 - `MYSQLDATABASE`: Name of the MySQL database. (**required**)
+- `MYSQL_URL`: Connection Url of the MySQL database. `mysql://user:password@host:port/database` (**required**)
 
 ### Themes
 
