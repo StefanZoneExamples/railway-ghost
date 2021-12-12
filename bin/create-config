@@ -41,7 +41,7 @@ function createConfig() {
   }
 
   config = {
-    url: "https://" + process.env.RAILWAY_STATIC_URL,
+    url: `https://${ process.env.CUSTOM_DOMAIN || process.env.RAILWAY_STATIC_URL }`,
     logging: {
       level: "info",
       transports: ["stdout"],
