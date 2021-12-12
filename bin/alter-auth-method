@@ -14,13 +14,7 @@ var mysql = require("mysql2");
 alterAuthenticationMethod();
 
 function alterAuthenticationMethod() {
-  var connection = mysql.createConnection({
-    host: process.env.MYSQLHOST,
-    port: process.env.MYSQLPORT,
-    user: process.env.MYSQLUSER,
-    password: process.env.MYSQLPASSWORD,
-    database: process.env.MYSQLDATABASE
-  });
+  var connection = mysql.createConnection(process.env.MYSQL_URL);
   connection.query(
     "ALTER USER `root`@`%` IDENTIFIED WITH mysql_native_password BY ?",
     [process.env.MYSQLPASSWORD],
