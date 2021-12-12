@@ -17,6 +17,6 @@
   },
   "scripts": {
     "start": "node index.js",
-    "postinstall": "chmod +x bin/alter-auth-method && bin/alter-auth-method && bash bin/cloudinary.sh && bash bin/themes.sh"
+    "postinstall": "chmod +x bin/alter-auth-method && node bin/alter-auth-method && bash bin/cloudinary.sh && bash bin/themes.sh"
   }
 }
